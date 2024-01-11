@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./../app/alloy_airsoft.monolit:/var/www/alloy_airsoft.monolit
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    ports:
+      - "8876:80"
+    container_name: nginx_con
+    depends_on:
+      - php
+
+  php:
+    build:
+      context: .
+      dockerfile: php/Dockerfile
+    volumes:
+      - ./../app/alloy_airsoft.monolit:/var/www/alloy_airsoft.monolit
+    depends_on:
+      - mysql
+    container_name: php_con
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - ./tmp/mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: alloy_airsoft
+      MYSQL_USER: Admin
+      MYSQL_ROOT_PASSWORD: ginzethreeh
+    ports:
+      - "8101:3306"
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    container_name: mysql_con
