@@ -22,6 +22,14 @@ services:
       - mysql
     container_name: php_con
 
+  npm:
+    image: node:latest
+    volumes:
+      - ./../app/:/var/www/html
+    working_dir: /var/www/html
+    container_name: npm_con
+    command: tail -f /dev/null
+
   mysql:
     image: mysql:latest
     restart: always
