@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-Class AppController extends AbstractController
+final class AppController extends AbstractController
 {
     #[Route('/', name: 'mainPage', methods: ['GET'])]
-    public function initialize()
+    public function initialize(): Response
     {
         return $this->render('base.html.twig');
     }
