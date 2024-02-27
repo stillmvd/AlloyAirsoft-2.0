@@ -2,16 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
-
-        {% block javascripts %}
-{% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
+        <title>Alloy Airsoft</title>
+        <link rel="shortcut icon" href="{{ asset('build/favicon/favicon.ico') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        {{ encore_entry_script_tags('app') }}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div id="root">
+
+        </div>
     </body>
 </html>
