@@ -11,6 +11,7 @@ Encore
     .setPublicPath('/build')
 
     .addEntry('app', './assets/app/app.tsx')
+    .addStyleEntry('styles', './assets/styles/main.scss')
 
     .splitEntryChunks()
     .enableSingleRuntimeChunk()

@@ -1,31 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../styles/main.scss';
 import {
-    Link,
     Route,
     BrowserRouter as Router, Routes,
 } from 'react-router-dom';
-
-const Home = () => <h1>Home</h1>;
-const Second = () => <h1>Second page</h1>
+import Home from '../pages/home';
 
 function App() {
     return (
-        <>
-            <nav>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="second">Second</Link>
-                </li>
-            </nav>
-
-            <Routes>
-                <Route path="/" Component={Home} />
-                <Route path="second" Component={Second} />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/" Component={Home} />
+        </Routes>
     );
 }
 
