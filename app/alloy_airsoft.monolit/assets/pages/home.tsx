@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC, ReactElement } from 'react';
 import logo from '../img/logo.svg';
 import account from '../img/account.svg';
 
-function Home() {
+const Home: FC = (): ReactElement => {
     return (
         <header>
             <a href="" className="logo-container">
@@ -16,7 +16,7 @@ function Home() {
                     Events
                 </a>
                 <a href="">
-                    Account
+                    Gallery
                 </a>
             </nav>
             <a href="" className="user-container">
