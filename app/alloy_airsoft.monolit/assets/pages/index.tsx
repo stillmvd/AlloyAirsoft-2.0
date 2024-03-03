@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/home';
+import Home from './home';
 import Events from './events';
 import Gallery from './gallery';
 
