@@ -13,5 +13,3 @@ export const App: FC = (): ReactElement => {
         </Routes>
     )
 }
-
-export default App;

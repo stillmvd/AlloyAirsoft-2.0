@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
-import {ListPointsMenu, PointMenu} from '../types/types';
+import { ListPointsMenu, PointMenu } from '../types/types';
 
 const loginKey: PointMenu = 1;
 const regKey: PointMenu = 2;

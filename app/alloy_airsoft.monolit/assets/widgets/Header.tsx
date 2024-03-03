@@ -1,8 +1,8 @@
 import React, { FC, ReactElement } from 'react';
-import {Link, useLocation} from 'react-router-dom';
-import {PersonalAccount} from '../shared/personal_account/ui/PersonalAccount';
+import { Link, useLocation } from 'react-router-dom';
+import { PersonalAccount } from '../shared/personal_account/ui/PersonalAccount';
 
-const Header: FC = (): ReactElement => {
+export const Header: FC = (): ReactElement => {
     const location = useLocation();
     return (
         <header>
@@ -26,5 +26,3 @@ const Header: FC = (): ReactElement => {
         </header>
     )
 }
-
-export default Header;

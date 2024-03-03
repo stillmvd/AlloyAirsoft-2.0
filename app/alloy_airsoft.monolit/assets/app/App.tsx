@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './main.scss';
-import App from '../pages';
+import { App } from '../pages';
 import { BrowserRouter } from 'react-router-dom';
 
 const rootElement: HTMLElement | null = document.getElementById('root');
