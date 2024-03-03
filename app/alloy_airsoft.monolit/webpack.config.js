@@ -10,7 +10,7 @@ Encore
     .setOutputPath('public/build/')
     .setPublicPath('/build')
 
-    .addEntry('app', './assets/app/app.tsx')
+    .addEntry('app', './assets/app/App.tsx')
     .addStyleEntry('styles', './assets/app/main.scss')
 
     .splitEntryChunks()

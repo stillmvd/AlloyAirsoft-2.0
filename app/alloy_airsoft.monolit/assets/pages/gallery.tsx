@@ -1,5 +1,5 @@
 import React, { FC, ReactElement } from "react";
-import Header from "../widgets/header";
+import Header from "../widgets/Header";
 
 const Events: FC = ():ReactElement => {
     return (

@@ -1,27 +1,9 @@
 import React, { FC, ReactElement } from 'react';
-import { Dropdown, MenuProps, ConfigProvider, theme } from 'antd';
+import { Dropdown, ConfigProvider, theme } from 'antd';
 import 'antd/dist/antd.js';
+import { items } from '../const/config';
 
-const items: MenuProps['items'] = [
-    {
-      key: '1',
-      label: (
-        <a href='/login'>
-          Sign in
-        </a>
-      ),
-    },
-    {
-      key: '2',
-      label: (
-        <a href='/registration'>
-          Sign up
-        </a>
-      ),
-    },
-  ];
-
-const User: FC = (): ReactElement => (
+export const PersonalAccount: FC = (): ReactElement => (
     <ConfigProvider
         theme={{
             token: {
@@ -36,5 +18,3 @@ const User: FC = (): ReactElement => (
         </Dropdown>
     </ConfigProvider>
 );
-
-export default User;

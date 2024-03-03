@@ -13,14 +13,4 @@ final class AppController extends AbstractController
     {
         return $this->render('base.html.twig');
     }
-    #[Route('/events', name: 'eventsPage', methods: ['GET'])]
-    public function events(): Response
-    {
-        return $this->render('base.html.twig');
-    }
-    #[Route('/gallery', name: 'galleryPage', methods: ['GET'])]
-    public function gallery(): Response
-    {
-        return $this->render('base.html.twig');
-    }
 }
