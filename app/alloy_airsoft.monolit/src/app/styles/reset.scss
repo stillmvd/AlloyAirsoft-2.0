@@ -13,7 +13,7 @@ ul, ol {
 /* Сброс стилей для ссылок */
 a {
   text-decoration: none;
-  color: inherit;
+  color: #e6e6e6;
 }
 
 /* Сброс стилей для изображений */
@@ -60,11 +60,7 @@ body, input, button, textarea, select {
 /* Сброс стилей для заголовков */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-}
-
-/* Сброс стилей для абзацев */
-p {
-  margin-bottom: 1rem;
+  color: #e6e6e6;
 }
 
 /* Сброс стилей для основного контента */
@@ -83,4 +79,8 @@ footer {
   .container {
     padding: 0 10px;
   }
+}
+
+p {
+  color: #e6e6e6;
 }

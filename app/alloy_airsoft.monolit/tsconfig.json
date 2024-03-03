@@ -27,9 +27,9 @@
   "noFallthroughCasesInSwitch": true // Report errors for fallthrough cases in switch statement
   },
   "include": [
-  "assets/**/*.ts",
-  "assets/**/*.tsx"
+  "src/**/*.ts",
+  "src/**/*.tsx"
   ],
-  "baseUrl": "./assets",
+  "baseUrl": "./src",
   "exclude": ["node_modules", "build"] // ** The files to not type check ***
 }
