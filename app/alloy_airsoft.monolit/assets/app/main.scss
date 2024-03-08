@@ -3,7 +3,7 @@
 @import "styles/fonts";
 
 * {
-  font-family: 'Chivo', sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #7AA973;
+  background-color: #7aa973;
   border-radius: 50px;
   padding: 14px;
   margin: 20px 0px;
@@ -40,7 +40,7 @@ header {
       width: 80px;
       padding: 5px 0;
       background-color: #151515;
-      transition: ease .1s;
+      transition: ease 0.1s;
     }
     .active {
       background-color: #3f6939;
@@ -83,7 +83,7 @@ main {
     }
     .eventContainer {
       display: grid;
-      grid-template-columns: .9fr 1.1fr;
+      grid-template-columns: 0.9fr 1.1fr;
       margin-top: 18px;
       background-color: #222222;
       padding: 14px;
@@ -93,7 +93,7 @@ main {
         align-items: center;
       }
       img {
-        background-color: #A99D73;
+        background-color: #a99d73;
         box-shadow: #384436 0px 0px 20px 3px;
         padding: 20px;
         border-radius: 16px;
@@ -113,7 +113,7 @@ main {
     display: flex;
     flex-direction: row;
     max-width: 600px;
-    background-image: url('../../public/img/background.svg');
+    background-image: url("../../public/img/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
@@ -121,7 +121,7 @@ main {
     overflow: hidden;
     .card_map {
       border-collapse: collapse;
-      border: 2px solid #7AA973;
+      border: 2px solid #7aa973;
       border-radius: 18px 0 0 18px;
       width: 42%;
     }
@@ -133,7 +133,7 @@ main {
       div {
         display: flex;
       }
-      .card-info_date{
+      .card-info_date {
         justify-content: end;
         align-items: start;
         p {
@@ -145,10 +145,10 @@ main {
           padding: 10px 4px;
           border-radius: 0 0 0 18px;
           font-size: larger;
-          background-color: #A99D73;
+          background-color: #a99d73;
         }
       }
-      .card-info_title{
+      .card-info_title {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -157,7 +157,7 @@ main {
         font-size: 24px;
         text-transform: uppercase;
       }
-      .card-info_block{
+      .card-info_block {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -174,7 +174,7 @@ main {
           .block_hr {
             height: 2px;
             width: 100%;
-            background-color: #7AA973;
+            background-color: #7aa973;
           }
         }
         .block_price {
@@ -186,7 +186,7 @@ main {
           padding: 10px 4px;
           border-radius: 18px 0 0 0;
           font-size: larger;
-          background-color: #7AA973;
+          background-color: #7aa973;
         }
       }
     }
