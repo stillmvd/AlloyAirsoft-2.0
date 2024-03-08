@@ -1,8 +1,6 @@
-import React, { FC, ReactElement } from 'react';
-import {AppRouter} from "./providers/router";
+import { FC, ReactElement } from "react";
+import { AppRouter } from "./providers/router";
 
 export const App: FC = (): ReactElement => {
-    return (
-        <AppRouter/>
-    )
-}
+    return <AppRouter />;
+};
