@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from "react";
 import { Dropdown, ConfigProvider, theme } from "antd";
 import "antd/dist/antd.js";
 import { items } from "../const/config";

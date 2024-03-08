@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from "react";
 
 const EventCard: FC = (): ReactElement => {
     return (

@@ -1,6 +1,7 @@
-import HomePageAsync from "../../../pages/HomePage/HomePage.async";
-import EventsPageAsync from "../../../pages/EventsPage/EventsPage.async";
-import GalleryPageAsync from "../../../pages/GalleryPage/GalleryPage.async";
+import React from "react";
+import HomePageAsync from '../../../pages/homePage/ui/HomePage.async';
+import EventsPageAsync from '../../../pages/eventsPage/ui/EventsPage.async';
+import GalleryPageAsync from '../../../pages/galleryPage/ui/GalleryPage.async';
 
 export enum AppRoutes {
     HOME = "",

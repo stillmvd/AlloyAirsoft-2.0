@@ -1,5 +1,5 @@
-import { FC, ReactElement } from "react";
-import { Header } from "../../widgets/Header";
+import React, { FC, ReactElement } from "react";
+import { Header } from "../../../widgets/Header";
 
 const HomePage: FC = (): ReactElement => {
     return (

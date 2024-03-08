@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { PersonalAccount } from "../shared/personal_account/ui/PersonalAccount";
 

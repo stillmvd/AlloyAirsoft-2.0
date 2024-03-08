@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import React, { FC, ReactElement } from "react";
 import { Header } from "../../../widgets/Header";
 import { RegForm } from "../../../app/features/UserAccess/ui/RegForm";
 
