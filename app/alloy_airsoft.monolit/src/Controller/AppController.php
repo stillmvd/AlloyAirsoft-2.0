@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 final class AppController extends AbstractController
 {
-    #[Route('/', name: 'mainPage', methods: ['GET'])]
+    #[Route('/api', name: 'mainPage', methods: ['GET'])]
     public function initialize(): Response
     {
         return $this->render('base.html.twig');
