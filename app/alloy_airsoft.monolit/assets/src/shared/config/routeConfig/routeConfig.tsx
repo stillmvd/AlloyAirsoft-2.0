@@ -9,6 +9,7 @@ export enum AppRoutes {
     GALLERY = "gallery",
 }
 
+//Разобраться с этим типом
 export const RoutePath: { [AppRoutes.HOME]: string; [AppRoutes.EVENTS]: string; [AppRoutes.GALLERY]: string } = {
     [AppRoutes.HOME]: "/",
     [AppRoutes.EVENTS]: "/events",

@@ -1,14 +1,86 @@
+/* Сброс стилей для всех элементов */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-input,
-button,
-textarea,
-select {
-    margin: 0;
+/* Сброс стилей для списков */
+ul, ol {
+  list-style: none;
+}
 
-    font: inherit;
+/* Сброс стилей для ссылок */
+a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+/* Сброс стилей для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Сброс стилей для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Сброс стилей для форм */
+input, button, textarea, select {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Сброс стилей для кнопок */
+button {
+  cursor: pointer;
+}
+
+/* Сброс стилей для текста */
+body, input, button, textarea, select {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Сброс стилей для контейнеров */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Сброс стилей для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #e6e6e6;
+}
+
+/* Сброс стилей для основного контента */
+main {
+  padding: 2rem 0;
+}
+
+/* Сброс стилей для футера */
+footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Сброс стилей для мобильных устройств */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+p {
+  color: #e6e6e6;
 }

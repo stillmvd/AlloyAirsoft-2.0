@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { PersonalAccount } from "../shared/personal_account/ui/PersonalAccount";
+// import { PersonalAccount } from "shared/personal_account/ui/PersonalAccount";
 
 export const Header: FC = (): ReactElement => {
     const location = useLocation();
@@ -26,9 +26,10 @@ export const Header: FC = (): ReactElement => {
                     Gallery
                 </Link>
             </nav>
-            <div className="userContainer">
-                <PersonalAccount />
-            </div>
+            {/*/ Вот эта тема не рабоатет */}
+            {/*<div className="userContainer">*/}
+            {/*    <PersonalAccount />*/}
+            {/*</div>*/}
         </header>
     );
 };

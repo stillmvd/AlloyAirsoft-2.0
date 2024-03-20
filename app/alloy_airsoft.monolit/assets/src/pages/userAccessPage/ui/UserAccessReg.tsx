@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from "react";
-import { Header } from "../../../widgets/Header";
-import { RegForm } from "../../../app/features/UserAccess/ui/RegForm";
+import { Header } from "widgets/Header";
+import { RegForm } from "features/UserAccess/ui/RegForm";
 
 const UserAccessReg: FC = (): ReactElement => {
     return (

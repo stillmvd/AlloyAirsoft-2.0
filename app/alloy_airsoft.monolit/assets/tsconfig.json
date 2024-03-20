@@ -8,7 +8,7 @@
     "module": "ESNext",
     // В какую спецификацию компилируем: для поддержки большинства браузеров
     "target": "es5",
-    "jsx": "react-jsx",
+    "jsx": "react",
     // Компилятор будет обрабатывать не только TS файлы, но и JS файлы
     "allowJs": true,
     "moduleResolution": "node",
@@ -33,6 +33,9 @@
     // import React from 'react';
     "allowSyntheticDefaultImports": true
   },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "baseUrl": "./src",
+  "exclude": ["node_modules", "build"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
